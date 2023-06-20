@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> JsForm</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- <style> div{ margin: 10px;}</style>  -->
+    </head>
+
+    <body>
+        <form id="simpleform" method="post">
+            <div>
+                <label >FirstName</label>
+                <input type ="text" id="fname" placeholder="Enter your FirstName">
+            </div>
+            <div>
+                <label >LastName</label>
+                <input type ="text" id="lname" placeholder="Enter your last name">
+            </div>
+            <div>
+                <label >Email</label>
+                <input type="email" id="email" placeholder="Enter Your email">
+            </div>
+            <div>
+                <label >PhoneNumber</label>
+                <input type="tel" id="phnum" placeholder="Enter Your phone number">
+            </div>
+          
+            <div>
+                <label >Address</label>
+                <textarea type="textarea" id="Address" cols="25" rows="5" width="" placeholder="Enter Your Addess"></textarea>
+            </div>
+            <div>
+                <label >City</label>
+                <select name="City" id="city">
+                    <option value="Dehradoon">Dehradoon</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Luckhnow">Luckhnow</option>
+                    <option value="Pune">Pune</option>
+                </select>
+            </div>
+            <div class="radio">
+                <label >Gender</label>
+                <input type="radio" id="female" name="gender">female
+                <input type="radio" id="male" name="gender">male
+                <input type="radio" id="others" name="gender">others   
+            </div>
+        <div>
+           
+            <button type="button" value="submit" onclick="submitdata()" >Submit</button>
+        </div>
+                </form>
+        
+    </body>
+    <script src="./index.js"></script>
+</html>
